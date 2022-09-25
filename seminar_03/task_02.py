@@ -3,7 +3,9 @@
 # "7"
 
 myList = ['65h34q', 'sdg634d', '147jnbv']
-num = '7'
+num = '5'
 for i in myList:
     if i.find(num) >= 0:
         print(i)
+
+
