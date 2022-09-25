@@ -8,12 +8,9 @@ with open('Exercise_01.txt', 'r') as f:
 string = string.split(' ')
 string = list(map(int, string))
 
-# for i in range(1, len(string)):
-#     if string[i] - 1 != string[i - 1]:
-#         print(f'Missed: {string[i] - 1}')
-#         break
-# else:
-#     print('Goog')
-
-lst = [(string[i] - 1) for i in range(1, len(string)) if string[i] - 1 != string[i - 1]]
-print(lst)
+for i in range(1, len(string)):
+    if string[i] - 1 != string[i - 1]:
+        print(f'Missed: {string[i] - 1}')
+        break
+else:
+    print('Goog')
