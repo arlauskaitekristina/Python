@@ -5,9 +5,8 @@
 
 list = [2, 3, 5, 9, 3]
 sum = 0
-for i in range(len(list)):
-    if i % 2 != 0:
-        sum = sum + list[i]
+for i in range(1, len(list), 2):
+    sum = sum + list[i]
 print(sum)
 
 # print(sum(list[1::2]))
