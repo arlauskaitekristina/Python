@@ -4,6 +4,10 @@
 # - 5 -> -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5
 
 n = int(input('Введите число N: '))
-for i in range(-n, n + 1):
-    # print(f'* {i} *')
-    print(i, end = ' ')
+# for i in range(-n, n + 1):
+#     # print(f'* {i} *')
+#     print(i, end = ' ')
+
+
+res = list(filter(lambda x: n.count(x) == 1, n))
+print(res)
