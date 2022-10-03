@@ -17,6 +17,6 @@ def initial_phonebook():
                 temp.append(str(input("Введите категорию (Семья/Друзья/Работа/Другие): ")))
     phone_book.append(temp)
     print('\nНомер телефона добавлен!')
-    with open(r' C:\Users\New\Desktop\VS_Code\python_seminar\homework_07_pb\phoneb.csv', 'a+', encoding='utf-8') as file:
+    with open(r'C:\Users\New\Desktop\VS_Code\python_seminar\homework_07_pb\Phonebook\phoneb.csv', 'a+', encoding='utf-8') as file:
         file.write(f"\n{temp[0]}\n{temp[1]}\n{temp[2]}\n{temp[3]}\n{temp[0]}, {temp[1]}, {temp[2]}, {temp[3]}")
     return phone_book
